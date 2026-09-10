@@ -27,7 +27,7 @@ The vulnerability is in `includes/PDF/BlockRenderer.php` inside `create_image_da
 $imageData = @file_get_contents($imageUrl);
 ```
 
-No URL validation. No scheme check. No allowlist. The function takes whatever URL is in the image tag and fetches it directly from the server — one line, zero protection.
+No URL validation. No scheme check. No allowlist. The function takes whatever URL is in the image tag and fetches it directly from the server - one line, zero protection.
 
 ---
 
