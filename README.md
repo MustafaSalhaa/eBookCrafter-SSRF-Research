@@ -97,7 +97,7 @@ During PDF generation, the server fetches the injected URL server-side - SSRF co
 
 ## Notes
 
-I discovered this vulnerability independently through manual code review and black-box testing. The duplicate submission confirms the issue is real and was a valid find, just not the first report. The full PoC, OOB confirmation, and internal SSRF validation were completed before the duplicate was known.
+I discovered this vulnerability independently through manual code review and WhiteBox testing. The duplicate submission confirms the issue is real and was a valid find, just not the first report. The full PoC, OOB confirmation, and internal SSRF validation were completed before the duplicate was known.
 
 ---
 
