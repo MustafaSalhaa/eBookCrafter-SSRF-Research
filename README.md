@@ -28,6 +28,7 @@ $imageData = @file_get_contents($imageUrl);
 ```
 
 No URL validation. No scheme check. No allowlist. The function takes whatever URL is in the image tag and fetches it directly from the server - one line, zero protection.
+![Vulnerable Code](VULNERABLE%20CODE.png)
 ---
 
 ## Impact
@@ -97,7 +98,7 @@ During PDF generation, the server fetches the injected URL server-side - SSRF co
 ## Notes
 
 I discovered this vulnerability independently through manual code review and WhiteBox testing. The duplicate submission confirms the issue is real and was a valid find, just not the first report. The full PoC, OOB confirmation, and internal SSRF validation were completed before the duplicate was known.
-
+![Duplicate Submission](Duplicate.png)
 ---
 
 ## Researcher
